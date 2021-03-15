@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .boxs {
+            width: 200px;
+            height: 200px;
+            background-color: #faa;
+            float: left;
+            margin: 10px;
+            transition: .5s;
+            /* transform: translateX(-220px); */
+        }
+
+        .translateX {
+            transform: translateX(-220px);
+        }
+
+        .translateX:hover {
+            transform: translateX(50px);
+
+        }
+
+        .rotate:hover {
+            transform: translateX(100px) rotate(360deg);
+        }
+
+        .scale:hover {
+            transform: scaleX(0.5);
+        }
+
+        .skewX:hover {
+            transform: skewX(-30deg);
+        }
+
+        .rotate2 {
+            transform-origin: 0 0;
+        }
+
+        .rotate2:hover {
+            transform: rotate(360deg) translateX(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxs translateX">translateX</div>
+    <div class="boxs rotate">rotate</div>
+    <div class="boxs scale">scale</div>
+    <div class="boxs skewX">skewX</div>
+    <div class="boxs rotate2">rotate2</div>
+</body>
+
+</html>

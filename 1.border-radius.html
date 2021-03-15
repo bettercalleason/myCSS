@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #afa;
+            float: left;
+            margin: 10px;
+        }
+
+        .box1 {
+            border-radius: 50px;
+        }
+
+        .box2 {
+            border-radius: 10px 20px 30px 40px;
+        }
+
+        .box3 {
+            border-radius: 10px 80px 50px;
+        }
+
+        .box4 {
+            border-radius: 10px 80px;
+        }
+
+        .box5 {
+            /* 扇形 */
+            border-radius: 100% 0 0 0;
+        }
+
+        .box6 {
+            border-radius: 10px 50px 80px 100px/50px 100px 20px 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+
+    <!-- 扇形 -->
+    <div class="box box5"></div>
+
+    <div class="box box6"></div>
+</body>
+
+</html>

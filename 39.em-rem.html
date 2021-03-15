@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem</title>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        @media (max-width:700px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        div {
+            /* root-em */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        1st layer
+        <div class="article">
+            2nd layer
+
+        </div>
+    </div>
+    <div class="inside-text">
+        3rd layer
+    </div>
+    <div class="inside-text">
+        3rd layer
+        <div class="inside-text">
+            3rd layer
+        </div>
+    </div>
+    <div class="inside-text">
+        3rd layer
+    </div>
+
+</body>
+
+</html>
